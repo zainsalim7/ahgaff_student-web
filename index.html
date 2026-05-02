@@ -63,21 +63,16 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
 
-    <!-- Service Worker Registration for PWA -->
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
           navigator.serviceWorker.register('/sw.js', { scope: '/' })
-            .then(function(reg) {
-              console.log('SW registered:', reg.scope);
-            })
-            .catch(function(err) {
-              console.log('SW registration failed:', err);
-            });
+            .then(function(reg) { console.log('SW registered:', reg.scope); })
+            .catch(function(err) { console.log('SW registration failed:', err); });
         });
       }
     </script>
 
-    <script src="/_expo/static/js/web/entry-da4a5993ff5fd0d57b5df3632949e948.js" defer></script>
+    <script src="/_expo/static/js/web/entry-042e3ace34f4603a0121b48801e1012f.js" defer></script>
   </body>
 </html>
