@@ -1,54 +1,38 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
   <head>
     <meta charset="utf-8" />
     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>طالب الأحقاف</title>
-    <meta name="description" content="تطبيق طالب جامعة الأحقاف" />
-    <meta name="theme-color" content="#0d47a1" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="طالب الأحقاف" />
-    <meta name="mobile-web-app-capable" content="yes" />
-
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
-    <link rel="icon" href="/favicon.ico" />
-
-    <link rel="preload" as="font" type="font/ttf" crossorigin
-      href="/assets/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Ionicons.b4eb097d35f44ed943676fd56f6bdc51.ttf" />
-
-    <style>
-      @font-face { font-family: 'Ionicons'; src: url('/assets/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Ionicons.b4eb097d35f44ed943676fd56f6bdc51.ttf') format('truetype'); font-display: block; font-weight: normal; font-style: normal; }
-      @font-face { font-family: 'MaterialIcons'; src: url('/assets/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/MaterialIcons.4e85bc9ebe07e0340c9c4fc2f6c38908.ttf') format('truetype'); font-display: block; font-weight: normal; font-style: normal; }
-      @font-face { font-family: 'MaterialCommunityIcons'; src: url('/assets/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/MaterialCommunityIcons.6e435534bd35da5fef04168860a9b8fa.ttf') format('truetype'); font-display: block; font-weight: normal; font-style: normal; }
-      @font-face { font-family: 'FontAwesome'; src: url('/assets/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/FontAwesome.b06871f281fee6b241d60582ae9369b9.ttf') format('truetype'); font-display: block; font-weight: normal; font-style: normal; }
-    </style>
-
+    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
     <style id="expo-reset">
-      html, body { height: 100%; }
-      body { overflow: hidden; }
-      #root { display: flex; height: 100%; flex: 1; }
+      /* These styles make the body full-height */
+      html,
+      body {
+        height: 100%;
+      }
+      /* These styles disable body scrolling if you are using <ScrollView> */
+      body {
+        overflow: hidden;
+      }
+      /* These styles make the root element full-height */
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
     </style>
-  </head>
+  <meta name="theme-color" content="#0d47a1">
+<link rel="icon" href="/favicon.ico" /></head>
 
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- Use static rendering with Expo Router to support running without JavaScript. -->
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <!-- The root element for your Expo app. -->
     <div id="root"></div>
-
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-          navigator.serviceWorker.register('/sw.js', { scope: '/' })
-            .then(function(reg) { console.log('SW registered:', reg.scope); })
-            .catch(function(err) { console.log('SW registration failed:', err); });
-        });
-      }
-    </script>
-
-    <script src="/_expo/static/js/web/entry-710b0f17e73b8b703495667967e13617.js" defer></script>
-  </body>
+  <script src="/_expo/static/js/web/entry-58a6e2f27a4c232519d6342d79ec71f6.js" defer></script>
+</body>
 </html>
